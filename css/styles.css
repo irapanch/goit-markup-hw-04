@@ -81,6 +81,7 @@ img{
 /* ============HEADER== */
 .header{
 	border-bottom: 1px solid var(--accent-color);
+	box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container{
 	display: flex;
@@ -172,6 +173,8 @@ img{
   background-image: linear-gradient( var(--hero-background-color), var(--hero-background-color)), url(../images/hero/people-office1.jpg);
   background-color: var(--hero-background-color);
   background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center;
 }
 
 	
@@ -351,7 +354,7 @@ margin-bottom: 72px;
 }
 .customers-list{
 	display: flex;
-	justify-content: space-between;
+	gap: 24px;
 }
 .customers-link{
 	display: flex;
@@ -361,13 +364,19 @@ margin-bottom: 72px;
 height: 88px;
 border: 1px solid var(--suble-text-color);
 border-radius: 4px;
-fill: var(--suble-text-color);
+/* fill: var(--suble-text-color); */
+color: var(--suble-text-color);
 }
 .customers-link:hover,
 .customers-link:focus{
 	border: 1px solid var(--pressed-state-color);
-	fill: var(--pressed-state-color);
+	/* fill: var(--pressed-state-color); */
+	color: var(--pressed-state-color);
 }
+.customers-icon{
+	fill: currentColor; 
+}
+
 
 
 /* ======FOOTER======== */
@@ -380,6 +389,7 @@ fill: var(--suble-text-color);
 }
 .footer-container{
 	display: flex;
+	align-items: baseline;
 }
 .footer-logo-part{
 
@@ -484,11 +494,13 @@ padding: 12px 24px;
 .gallery-item{
 	width: calc((100% - 48px) / 3);
 }
-.gallery-item:hover,
-.gallery-item:focus{
+.gallery-link{
+	display: block;
+}
+.gallery-link:hover,
+.gallery-link:focus{
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
 
 .gallery-card{
 	border: 1px solid var(--accent-color);
