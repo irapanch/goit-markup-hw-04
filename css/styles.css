@@ -227,6 +227,17 @@ img{
 .properties-item{
 width: calc((100% - 3 * 24px) / 4)
 }
+.properties-icons{
+	width: 264px;
+height: 112px;
+background:var(--light-color);
+border-radius: 4px;
+display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
 .properties-name{
 	margin-bottom: 8px;
 }
@@ -306,6 +317,9 @@ margin-bottom: 72px;
 	margin-bottom: 8px;
 	
 }
+.team-text{
+	margin-bottom: 8px;	
+}
 .team-icon-list{
 	display: flex;
 	justify-content: center;
@@ -321,15 +335,57 @@ margin-bottom: 72px;
 	border-radius: 50%;
 	background-color: var(--primary-brand-color);
 }
+.team-icon-link:hover,
+.team-icon-link:focus{
+	background-color: var(--pressed-state-color);
+}
+.team-icon{
+	fill: var(--light-color);
+}
+.customers-body{
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+.customers-title{
+	margin-bottom: 72px;
+}
+.customers-list{
+	display: flex;
+	justify-content: space-between;
+}
+.customers-link{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 168px;
+height: 88px;
+border: 1px solid var(--suble-text-color);
+border-radius: 4px;
+fill: var(--suble-text-color);
+}
+.customers-link:hover,
+.customers-link:focus{
+	border: 1px solid var(--pressed-state-color);
+	fill: var(--pressed-state-color);
+}
+
 
 /* ======FOOTER======== */
 .footer {
 	background-color: var(--dark-color);
-	display: flex;
+	/* display: flex; */
 	padding-top: 100px;
 	padding-bottom: 100px
 	
 }
+.footer-container{
+	display: flex;
+}
+.footer-logo-part{
+
+	margin-right: 120px;
+}
+
 .footer-logo{
 	display: inline-block;
 	margin-bottom: 16px;
@@ -347,6 +403,31 @@ margin-bottom: 72px;
 	color: var(--light-color);
 }
 
+.footer-title{
+	margin-bottom: 16px;
+	font-weight: 500;
+	color: var(--white-background-color);
+
+}
+.footer-icon-list{
+	display: flex;
+	gap: 16px;
+}
+.footer-icon-link{
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-brand-color);
+    fill: var(--light-color);
+}
+.footer-icon-link:hover,
+.footer-icon-link:focus{
+	background-color: var(--success-color);
+	
+}
 
 
 
@@ -419,9 +500,10 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 	font-size: 20px;
 	line-height: 1.2;
 	margin-bottom: 8px;
+	text-align:left;
 }
 
 .gallery-project-text {
 	color: var(--text-color);
-	text-align: center;
+	
 }
